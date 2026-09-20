@@ -1,4 +1,5 @@
 backend:
+  appVersion: "v2"
   replicaCount: 3
   image:
     repository: backend

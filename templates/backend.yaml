@@ -31,6 +31,8 @@ spec:
             - configMapRef:
                 name: backend-config
           env:
+            - name: APP_VERSION
+              value: "{{ .Values.backend.appVersion }}"
             - name: MONGO_USER
               valueFrom:
                 secretKeyRef:
